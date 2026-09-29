@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museu do Futuro</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: #E0E0E0;
+            color:rgb(9, 8, 9);
+        }
+
+        header{
+            background-color: #111111;
+            color:white;
+            text-align: center;
+            padding: 50px 20px
+        }
+
+        header p {
+            color: #eeebf8
+        }
+
+        nav{
+            background-color: #222123;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a{
+             color: rgb(128, 159, 172);
+             text-decoration: none;
+             margin:10px;
+        }
+
+        nav a:hover{
+            color:blanchedalmond
+        }
+
+        main{
+            max-width: 1000px;
+            margin:auto;
+            padding: 30px 20px;
+        }
+
+        section{
+            background-color: #181d25;
+            margin-bottom: 25 px ;
+            padding: 25px;
+            border-radius:10px;
+            color:white;
+        }
+
+        h2{
+            border-bottom: 2px solid rgb(92, 111, 146);
+        }
+
+        .destaque{
+            display: flex;
+            gap:30px;
+            align-items: center;
+        }
+
+        .destaque img{
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .codigo{
+            color:rgb(27, 27, 25);
+        }
+
+        .etiqueta{
+            display: inline-block;
+            background-color:#415789;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .hipoteses{
+            display:flex;
+            gap:15px;
+        }
+
+        .article{
+            flex:1;
+            background-color: rgb(72, 127, 127);
+            padding:18px;
+            border-radius: 8px;
+        }
+
+        aside{
+            background-color: #283656;
+            color:white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom:25px;
+        }
+        blockquote{
+            border-left: 4px solid rgb(128, 159, 172);
+            margin-left: 0;
+            padding:20px;
+            font-style: italic;
+
+        }
+        table{
+            width:100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border:1px solid rgb(229, 235, 240);
+            text-align:left;
+        }
+
+        th{
+            
+            color:white;
+            text-align:center;
+        }
+
+        .alert{
+            background-color: rgb(40, 43, 73);
+            border-left: 6px solid #4968b1;
+        }
+
+        footer{
+            background-color: #1a1919;
+            color:white;
+            text-align: center;
+            padding:30px;
+            font-size:15px;
+        }
+
+        @media(max-width: 700px){
+            .destaque,.hipoteses{
+                flex-direction: column;
+            }
+            .destque img{
+                width:100px;
+            }
+            nav a{
+                display: block;
+            }
+            table{
+                font-size:13px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p> MUSEU DE ARQUEOLOGIA DIGITAL</p>
+
+        <h1>Arquivo Histórico - 2200</h1>
+
+        <p>
+            Reconstruindo os misteriosos costumes 
+            da humanidade no Século XXI
+        </p>
+    </header>
+
+    <nav>
+        <a href="#artefato">Artefato</a>
+        <a href="#descoberta">Descoberta</a>
+        <a href="#hipoteses">Hipóteses</a>
+        <a href="#evidencias">Evidências</a>
+        <a href="#arqueologo">Arqueólogos</a>
+    </nav>
+
+    <main>
+        <section id ="artefato">
+            <img src="https://images.tcdn.com.br/img/img_prod/1261714/escorredor_de_macarrao_legumes_e_massas_153_1_7f05b4b7caa3bcf5b1a8f7d4f4d55700.jpg" >
+
+        <article>
+            <p>ARTEFATO #AF-2026-010</p>
+
+            <h2>Escorredor</h2>
+
+            <p class="etiqueta">
+                Importância cultural: 09/10
+            </p>
+
+            <p>
+                Artefato doméstico utilizado pela 
+                civilização mundial do início do século XXI.
+            </p>
+
+            <p>
+                Registros digitas sugerem que seu papel ultrapassava a culinária brasileira
+            </p>
+
+            <p>
+                Alguens habitantes da época chegaram a declarar:
+            </p>
+
+            <blockquote>"Escorredor  é vida!"</blockquote>
+        </article>
+        </section>
+
+        <section id="descoberta">
+            <h2>Local da descoberta</h2>
+
+            <p>
+                O artefato foi encontrado em 22 de fevereiro de 2189 durante uma 
+                escavação nas ruínas de um antigo condominio residencial.
+            </p>
+
+            <p>
+                <strong>Local histórico:</strong>
+                Sorocaba, antiga região denominada interior de São Paulo, Brasil.
+            </p>
+             
+            <p>
+                O aparelho estava sobre uma superfice de pedra artificial que
+                os registros históricos chamavam de <strong> "pia da cozinha"</strong>
+            </p>
+
+            <h3>Objetos encontrados próximos</h3>
+
+            <ul>
+
+            <li>Embalagens de Alimentos não perecíveis</li>
+            <li>Colheres</li>
+            <li>Utensílios de cozinha</li>
+            <li>Comidas em saco, com o título de "Arroz" ou "Macarrão"/li>
+            </ul>
+            <blockquot>
+                <i>"Escorra o alimento aqui"</i>
+            </blockquot>
+
+            <p>
+                Até hoje os arqueólogos não sabem a importância desse objeto
+            </p>
+        </section>
+
+        <section>
+            <h2>Descrição Física</h2>
+
+            <p>
+                O objeto apresenta formato aproximadamente cônico com pequenos furos em volta.
+            </p>
+
+            <p>
+                <strong>Altura:</strong> aproximadamento 20 cm <br>
+                <strong>Peso:</strong> aproximadamento 150g <br>
+                <strong>Material:</strong> Aço inox <br>
+                <strong>Fonte energética:</strong> potencial gravitacional <br>
+            </p>
+
+            <p>
+                Durante alguns anos de descobertas, acreditou-se que o escorredor fosse para fazer luzes no cabelo das mulheres. Contudo, foi rapidamente descartada pelos especialistas.
+            </p>
+
+    
+        </section>
+
+        <section>
+            <h2> Função provável</h2>
+
+            <p>
+                Simulações indicam que o escorredor utilizava os furos como uma peneira, para separar um alimento de outro.
+            </p>
+
+            <p>
+                Entretanto, a quantidade de registros encontrados sugere que sua importância social era muito maior.
+            </p>
+
+            <blockquote><strong>"Depois do escorredor nunca mais usarei peneira</strong></blockquote>
+
+            <blockquote><strong>"Tudo segura no escorredor"</strong></blockquote>
+            
+            <p> 
+               A expressão "Tudo segura no escorredor" gerou décadas de discussão entre historiadores
+            </p>
+        </section>
+
+        <section id="hipoteses">
+            <h2> Principais hipóteses arqueológicas</h2>
+            
+            <div class="hipoteses">
+                <article>
+                    <h3>Hipótese A</h3>
+
+                    <p>
+                        <strong>Utensílio de cozinha</strong>
+                    </p>
+
+                    <p>
+                        A teoria mais aceita afirma que o objeto era utilizado apenas para separar o alimento da água
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Hipótese B</h3>
+
+                    <p><strong>Símbolo de status</strong></p>
+
+                    <p>
+                        Alguns pesquisadores acreditam que possuir um escorredor era um simbolo de status e divisão social.
+                    </p>
+
+                    <article>
+                        <h3>Hipotese C</h3>
+                        <p>Fonte de Energia</p>
+
+                        <p>
+                            Esta teoria afirma que ele através da energia cinética feita pelos movimentos circulares, seria um potótico de uma futura usina elétrica
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Hipotede D</h3>
+                        <p>Objeto ritualístico</p>
+
+                        <p>
+                            Esta teoria afirma que algumas pessoas utilizavam o objeto para fazer uma cerimônia ritualistica para a <strong>"Dança da Chuva"</strong>, que através da água dos céus que caiam sobre o objeto, e aos movimentos circulares, poderia
+                        </p>
+                    </article>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reconstrução do ritual</h2>
+
+            <ol>
+                <li>Faça um macarrão ou alimento para escorrer</li>
+                <li>Pegue o escorredor</li>
+                <li>Jogue o conteúdo em cima</li>
+                <li>Espere escorrer totalmente</li>
+                 <li>Retire o conteúdo do escorredor</li>
+            </ol>
+        </section>
+
+        <section id="evidencias">
+            <h2>Evidencias linguísticas</h2>
+
+            <p>
+                A interpretação da linguagem brasileirado do século XXI foi uma das maiores dificuldades da interpretação
+            </p>
+
+            <table>
+                <tr>
+                    <th>Expressão encontrada</th>
+                    <th>Interpretação em 2200</th>
+                </tr>
+
+                <tr>
+                    <td>O escorredor é vida</td>
+                    <td>Possível crença religiosa</td>
+                </tr>
+
+                <tr>
+                    <td>Meu macarrão está empatunhado!</td>
+                    <td>Significado ainda desconhecido</td>
+                </tr>
+
+                <tr>
+                    <th>Meu Macarrão está soltinho</th>
+                    <td>Menção positiva</td>
+                </tr>
+
+                <tr>
+                    <td>Só vai</td>
+                    <td>Instrução sem detalhes suficientes</td>
+                </tr>
+
+                <tr>
+                    <td>Bom demais</td>
+                    <td>Avaliação extremamente positiva</td>
+                </tr>
+                
+                <tr>
+                    <td>5 Minutos</td>
+                    <td>Unidade de tempo altamente variavel</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Fragmentos digitais recuperados</h2>
+
+            <p>
+                Diversos Vídeos foram recuperados de uma antiga plataforma 
+                chamada <strong>Youtube</strong>
+            </p>
+
+            <p>
+                Muitos começavam com a frases semelhantes:
+            </p>
+
+            <blockquote>
+                "Voce vai PRECISAR do escorredor para completar sua receita"
+            </blockquote>
+
+            <p>
+                Curiosamente, os vídeos normalmente mostravam
+                alimentos bastantes previsíveis.
+            </p>
+
+            <p>
+                Isso levou alguns pesquiadores a considerar 
+                que os habitantes de 2026 possuíam padrões de surpresa muito diferentes dos atuais
+            </p>
+        </section>
+
+        <aside id="arqueologo">
+            <h2>Comentários do Arqueólogo</h2>
+
+            <h3>Dr. Thomas Resta Bersi de Magalhães</h3>
+
+            <p>
+                Instituto de Arqueologia Doméstica - 2200
+            </p>
+
+            <blockquote>
+                Durante muito tempo acreditamos que a 
+                expressão "é vida" fosse utilizada apenas de maneira figurativa.
+            </blockquote>
+
+            <blockquote>
+                Entretanto, encontramos referencias semelhantes envolvendo café, 
+                pizza, sexta-feira, feiras, Wi-fi e Air Frye.
+            </blockquote>
+
+            <blockquote>
+                É improvavel que todos estes elementos fossem simultaneamente responsáveis pela existencia humana.
+            </blockquote>
+
+            <p>
+                Atualmente trabalhos com a hipótese de que os humanos de 2026 
+                utilizavam a palavra "vida" com uma liberdade semântica extraordinária
+            </p>
+        </aside>
+
+        <section>
+            <h2>Teorias rejeitas</h2>
+
+            <h3>Reservatório</h3>
+
+            <p>
+                Durante algum tempo, acreditou-seque a côncavidade era utilizada como reservatório
+            </p>
+
+            <p>
+                A hipótese foi abandonada depois de experimentos classificados como <strong>lamentáveis</strong>
+            </p>
+
+            <h3>Vestimentas</h3>
+
+            <p>
+                Outro grupo defendeu que seu formato cônico e as alças ao lado servissem como chapéu.
+            </p>
+
+            <p>
+                A teoria continua tecnicamente possível, embora não existam 
+                evidências.
+            </p>
+        </section>
+
+        <section>
+            <h2>Objetos associado: Frutas</h2>
+
+            <p>
+                Próximo ao escorredor foi encontrado embalagens de frutas.
+            </p>
+
+            <p>
+                Posteriormente ela foi identificada como <strong>Uva</strong>
+            </p>
+
+            <p>
+                Alguns pesquisadores defendem que a uva era utilizado no escorredor pois tinham uma melhor secagem.
+            </p>
+            </section>
+            <section>
+                <h2>Perguntas sem respostas</h2>
+                <ul>
+                    <li>Por que os humanos colocariam na cabeça</li>
+                    <li>Por que algumas residencias não possuiam o escorredor?</li>
+                    <li>Por quais mais produtos ele era utilizado?</li>
+                    <li>Por que os furos são redondos?</li>
+                </ul>
+            </section>
+            
+            <section class="alert" >
+                <h2>Nota de segurança do museu</h2>
+
+                <p>
+                    Visitantes não devem tenta reproduzir tecnicas culinarias
+                    do século XXI utilizando equipamentos arqueológicos originais.
+                </p>
+
+                <p>
+                    O incidente envolvendo o pesquisador Almeida, e um macarrão sendo utilizado em cima da pia para separar do caldo, ainda está sob invetigação.
+                </p>
+                </section>
+
+                <section>
+                    <h2>Classificação final</h2>
+
+                    <p>Nome conhecido: <strong>Escorredor de Macarrão </strong></p>
+
+                    <p>Nome arqueológico: <strong> Cone domestica de separação</strong></p>
+
+                    <p>Civilização: <strong>Sociedade Digital Pré Singularidade</strong></p>
+
+                    <p>Período:<strong> Aproximadamente ?-2035</strong></p>
+
+                    <p>Uso confirmado: <strong>Preparo de alimentos</strong></p>
+
+                    <p>Uso simbólico: <strong>71%</strong></p>
+                </section>
+             </main>
+
+             <footer>
+                
+                <p>Museu de Arqueologia Digital - Ano 2200</p>
+
+                <p>Depertamento de Estudos de Estranhas Civilização do século XXI</p>
+             </footer>
+  </body>
+</html>
